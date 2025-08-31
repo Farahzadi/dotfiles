@@ -1,0 +1,58 @@
+command_timeout = 1000
+format = '$all$time$character'
+
+[[battery.display]]
+threshold = 30
+style = "bold green"
+
+[cmd_duration]
+format = '[$duration]($style) '
+
+[directory]
+truncation_length = 8
+truncation_symbol = '../'
+home_symbol = '🏠'
+
+[directory.substitutions]
+'🏠/Developer' = '👨‍💻'
+
+[direnv]
+disabled = false
+
+[git_branch]
+always_show_remote = true
+
+[git_commit]
+tag_disabled = false
+
+[git_metrics]
+disabled = false
+
+[git_status]
+style = 'bold green'
+
+[localip]
+ssh_only = false
+disabled = false
+
+[memory_usage]
+disabled = false
+style = 'bold dimmed blue'
+threshold = 0
+
+[netns]
+symbol = '🛜 '
+
+[nodejs]
+format = 'via [nodejs $version](bold green) '
+
+[status]
+disabled = true
+
+[sudo]
+disabled = false
+
+[time]
+disabled = false
+format = '🕙 [$time](fg:#ed4dff) '
+time_format = '%F - %R'

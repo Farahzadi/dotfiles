@@ -1,0 +1,130 @@
+[general]
+import = [
+  # uncomment the flavour you want below:
+  # "~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+  "~/.config/alacritty/catppuccin-macchiato.toml"
+  # "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[window.padding]
+x = 16
+y = 16
+
+[font]
+size = 14
+
+[font.normal]
+family = "Hack Nerd Font Mono"
+style = "Regular"
+
+[font.italic]
+family = "Hack Nerd Font Mono"
+style = "Italic"
+
+[font.bold]
+family = "Hack Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack Nerd Font Mono"
+style = "Bold Italic"
+
+# [colors.primary]
+# background = "#282a36"
+# foreground = "#f8f8f2"
+#
+# [colors.bright]
+# black   = "#5C5C5C"
+# blue    = "#6699CC"
+# cyan    = "#5FB3B3"
+# green   = "#A6BC99"
+# magenta = "#824F82"
+# red     = "#E57373"
+# white   = "#F3F4F5"
+# yellow  = "#FAC863"
+#
+# [colors.cursor]
+# cursor = "CellForeground"
+# text   = "CellBackground"
+#
+# [colors.footer_bar]
+# background = "#C0C5CE"
+# foreground = "#232323"
+#
+# [colors.hints.end]
+# background = "CellBackground"
+# foreground = "CellForeground"
+#
+# [colors.hints.start]
+# background = "CellBackground"
+# foreground = "CellForeground"
+#
+# [colors.line_indicator]
+# background = "None"
+# foreground = "None"
+#
+# [colors.normal]
+# black   = "#232323"
+# blue    = "#6699CC"
+# cyan    = "#5FB3B3"
+# green   = "#A6BC99"
+# magenta = "#824F82"
+# red     = "#E57373"
+# white   = "#C0C5CE"
+# yellow  = "#FAC863"
+#
+# [colors.search.focused_match]
+# background = "CellBackground"
+# foreground = "CellForeground"
+#
+# [colors.search.matches]
+# background = "CellBackground"
+# foreground = "CellForeground"
+#
+# [colors.selection]
+# background = "CellForeground"
+# text       = "CellBackground"
+#
+# [colors.vi_mode_cursor]
+# cursor = "CellForeground"
+# text   = "CellBackground"
+#
+[bell]
+animation = "EaseOutExpo"
+color     = "#C0C5CE"
+command   = "None"
+duration  = 0
+
+[selection]
+save_to_clipboard     = false
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[cursor]
+unfocused_hollow = true
+vi_mode_style    = "None"
+
+[keyboard]
+bindings = [
+  { key = "Left",  mods = "Alt",     chars = "\u001bB"   },
+  { key = "Right", mods = "Alt",     chars = "\u001bF"   },
+  { key = "Left",  mods = "Command", chars = "\u001bOH"  },
+  { key = "Right", mods = "Command", chars =  "\u001bOF" },
+  { key = "Back",  mods = "Command", chars = "\u0015"    },
+  { key = "Back",  mods = "Command", chars = "\u0015"    },
+  { key = "K",     mods = "Command", chars = "\u001b[3J\u001b[H\u001b[2J" }
+]
+
+[mouse]
+hide_when_typing = true
+
+[debug]
+highlight_damage   = false
+log_level          = "Warn"
+persistent_logging = false
+print_events       = false
+render_timer       = false
+
+[env]
+TERM = "xterm-256color"
+
